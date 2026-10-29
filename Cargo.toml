@@ -1,0 +1,17 @@
+[package]
+name = "sniffer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+
+[dependencies.windows-sys]
+version = "0.61"
+features = [
+    "Win32_Foundation",
+    "Win32_Networking_WinSock",
+    "Win32_System_IO",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_System_Threading",
+]
